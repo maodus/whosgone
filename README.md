@@ -5,5 +5,13 @@ Utilizing Instagram's user data download feature, this utility serves to show yo
 
 Additionally, since this application is locally operated, the risk of your Instagram account being flagged as a bot or rate-limited is fully mitigated.
 
-</br>
+<br/>
 ## Getting Started
+This program has only been tested on Python version 3.10.2 (64 bit), so if your Python installation does not end up working with this app, please install the version that the program has been tested with.
+
+### Installation
+1. Clone the repo<br/>
+```git clone https://github.com/maodus/whosgone.git```
+
+### Usage
+🚧 **Under Construction** 🚧
