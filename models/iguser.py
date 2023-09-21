@@ -4,6 +4,9 @@ class IGUser:
         self.name = name
         self.interaction_date = interaction_date
 
+    def __repr__(self):
+        return self.name
+
     def __eq__(self, other):
         if not isinstance(other, IGUser):
             return False
