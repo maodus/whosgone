@@ -17,11 +17,11 @@ if __name__ == "__main__":
 
     print(f"Users that don't follow you back ({len(non_followers)}/{len(following)}): ")
 
-    for user in (following - followers):
+    for user in non_followers:
         print(user)
 
     print(f"\nUsers that you dont follow back ({len(non_following)}/{len(followers)}): ")
 
-    for user in (followers - following):
+    for user in non_following:
         print(user)
 
