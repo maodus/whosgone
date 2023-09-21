@@ -1,7 +1,7 @@
 <h1 align="center">Who's Gone?</h1>
 
 ## Project Info
-Utilizing Instagram's user data download feature, this utility serves to show you all of the people that did not reciprocate your follow and vice-versa. Unlike many other web based solutions to this problem, this program can handle large data sets of follower/following user data, and does not have to rely on Instagram's annoying rate limits.
+Utilizing Instagram's user data download feature, this utility serves to show you all of the people that did not reciprocate your Instagram follow and vice-versa. Unlike many other web based solutions to this problem, this program can handle large data sets of follower/following user data, and does not have to rely on Instagram's annoying rate limits.
 
 Additionally, since this application is locally operated, the risk of your Instagram account being flagged as a bot account or being rate-limited is fully mitigated.
 
@@ -27,3 +27,10 @@ Before using this app, you will want to obtain your Instagram data in the `.zip`
 2. Run `whosgone.py`
    * For Windows CMD: ```python whosgone.py``` or ```whosgone.py```
 3. When prompted, type in a valid file path that points to your zipped data file. The file does not have to be inside the same directory.
+
+</br>
+
+## Roadmap
+- [ ] Update the program output in order to increase readability. **(WIP)**
+- [ ] Ensure cross-platform support.
+- [ ] Create a graphical interface for a better user experience.
