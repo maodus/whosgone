@@ -1,8 +1,16 @@
+'''
+Copyright (c) 2023, Nicholas Maodus
+All rights reserved.
+
+This source code is licensed under the BSD-style license found in the
+LICENSE file in the root directory of this source tree. 
+'''
+
 from zipfile import ZipFile
 from . import jsontools
 
 class IGExtractor:
-    
+
     # path should point to the location of the instagram provided zip-file
     def __init__(self, path):
         self.path = path
