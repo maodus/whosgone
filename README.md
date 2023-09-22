@@ -21,7 +21,7 @@ This application, as seen in the [source code](./whosgone/utils/extractor.py), w
 ```git clone https://github.com/maodus/whosgone.git```
 
 ### Usage
-Before using this app, you will want to obtain your `.json` Instagram data in the `.zip` file format. More info [here](https://help.instagram.com/181231772500920).
+Before using this app, you will want to obtain your **JSON** Instagram data in the `.zip` file format. More info [here](https://help.instagram.com/181231772500920).
 
 1. Download your Instagram usage data. **Do not unzip the file**.
 2. Run `whosgone.py`
