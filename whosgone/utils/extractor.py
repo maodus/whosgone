@@ -7,7 +7,7 @@ LICENSE file in the root directory of this source tree.
 '''
 
 from zipfile import ZipFile
-from . import jsontools
+from whosgone.utils import jsontools
 
 class IGExtractor:
 
