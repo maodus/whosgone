@@ -7,6 +7,7 @@ LICENSE file in the root directory of this source tree.
 '''
 
 from whosgone.utils import IGExtractor
+from whosgone.core.output import TextOutput
 import os
 
 if __name__ == "__main__":
@@ -20,16 +21,5 @@ if __name__ == "__main__":
     followers = igextract.get_followers()
     following = igextract.get_following()
 
-    non_followers = following - followers # People that don't follow us back
-    non_following = followers - following # People that we don't follow back
-
-    print(f"Users that don't follow you back ({len(non_followers)}/{len(following)}): ")
-
-    for i, user in enumerate(non_followers):
-        print(f"{i + 1}. {user}")
-
-    print(f"\nUsers that you dont follow back ({len(non_following)}/{len(followers)}): ")
-
-    for i, user in enumerate(non_following):
-        print(f"{i + 1}. {user}")
-
+    output = TextOutput(followers, following)
+    output.create_output()
