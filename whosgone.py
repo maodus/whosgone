@@ -6,7 +6,7 @@ This source code is licensed under the BSD-style license found in the
 LICENSE file in the root directory of this source tree. 
 '''
 
-from utils.extractor import IGExtractor
+from whosgone.utils import IGExtractor
 import os
 
 if __name__ == "__main__":
@@ -25,11 +25,11 @@ if __name__ == "__main__":
 
     print(f"Users that don't follow you back ({len(non_followers)}/{len(following)}): ")
 
-    for user in non_followers:
-        print(user)
+    for i, user in enumerate(non_followers):
+        print(f"{i + 1}. {user}")
 
     print(f"\nUsers that you dont follow back ({len(non_following)}/{len(followers)}): ")
 
-    for user in non_following:
-        print(user)
+    for i, user in enumerate(non_following):
+        print(f"{i + 1}. {user}")
 
