@@ -7,7 +7,7 @@ LICENSE file in the root directory of this source tree.
 '''
 
 import json
-from whosgone.core.ig.iguser import IGUser
+from whosgone.core.ig import IGUser
 
 # Creates a set containing IGUsers that represent each user in the givin data set
 # data is a json string of either the main user's followers or following
