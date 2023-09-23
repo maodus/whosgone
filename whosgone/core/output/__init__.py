@@ -8,3 +8,4 @@ LICENSE file in the root directory of this source tree.
 
 from .outputbase import *
 from .textoutput import *
+from .htmloutput import *
