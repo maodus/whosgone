@@ -15,9 +15,13 @@ from whosgone.core.ig import IGUser
 #   relationship can either be "relationships_following" or "relationships_followers"
 def instantiate_users(data, relationship):
     json_data = json.loads(data)
-    users = set()
 
-    for user_data in json_data[relationship]:
+    if relationship in json_data:
+        json_data = json_data[relationship]
+
+    users = set()
+    
+    for user_data in json_data:
         user = user_data["string_list_data"][0] # We only need the info regarding the user
         iguser = IGUser(user["value"], str(user["timestamp"]))
         users.add(iguser)

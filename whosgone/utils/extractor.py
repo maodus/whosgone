@@ -23,7 +23,7 @@ class IGExtractor:
                 return file.read()
     
     def get_followers(self):
-        data = self.__read_zipped_file("followers_and_following/followers.json")
+        data = self.__read_zipped_file("followers_and_following/followers_1.json")
         return jsontools.instantiate_users(data, "relationships_followers")
 
 
