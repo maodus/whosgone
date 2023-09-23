@@ -21,13 +21,13 @@ This application, as seen in the [source code](./whosgone/utils/extractor.py), w
 ```git clone https://github.com/maodus/whosgone.git```
 
 ### Usage
-Before using this app, you will want to obtain your **JSON** Instagram data in the `.zip` file format. More info [here](https://help.instagram.com/181231772500920).
+Before using this app, you will want to obtain your **JSON** Instagram data in the `.zip` file format. This will **NOT** work if you select the **HTML** configuration when downloading. More info [here](https://help.instagram.com/181231772500920).
 
 1. Download your Instagram usage data. **Do not unzip the file**.
 2. Run `whosgone.py`
    * For Windows CMD: ```python whosgone.py``` or ```whosgone.py```
    * For UNIX (Mac/Linux): ```python3 whosgone.py```or ```python whosgone.py```
-3. When prompted, type in a valid file path that points to your zipped data file. The file does not have to be inside the same directory.
+3. When prompted, type in a valid file path that points to your zipped data file. The zip file does not have to be inside the same directory.
 
 </br>
 
