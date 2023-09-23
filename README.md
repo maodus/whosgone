@@ -26,6 +26,7 @@ Before using this app, you will want to obtain your **JSON** Instagram data in t
 1. Download your Instagram usage data. **Do not unzip the file**.
 2. Run `whosgone.py`
    * For Windows CMD: ```python whosgone.py``` or ```whosgone.py```
+   * For UNIX (Mac/Linux): ```python3 whosgone.py```or ```python whosgone.py```
 3. When prompted, type in a valid file path that points to your zipped data file. The file does not have to be inside the same directory.
 
 </br>
