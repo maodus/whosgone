@@ -5,6 +5,8 @@ Utilizing Instagram's user data download feature, this utility serves to show yo
 
 Additionally, since this application is locally operated, the risk of your Instagram account being flagged as a bot account or being rate-limited is fully mitigated.
 
+![image](https://i.imgur.com/0gpU8Dv.png)
+
 <br/>
 
 ## Privacy
@@ -28,6 +30,7 @@ Before using this app, you will want to obtain your **JSON** Instagram data in t
    * For Windows CMD: ```python whosgone.py``` or ```whosgone.py```
    * For UNIX (Mac/Linux): ```python3 whosgone.py```or ```python whosgone.py```
 3. When prompted, type in a valid file path that points to your zipped data file. The zip file does not have to be inside the same directory.
+4. Check out your results in `/ig_results/`.
 
 </br>
 
