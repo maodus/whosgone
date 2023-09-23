@@ -1,3 +1,6 @@
+# Resources
+!resources/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -38,6 +41,8 @@ pip-delete-this-directory.txt
 
 # Local Testing
 *.zip
+*.html
+ig_results/
 
 # Unit test / coverage reports
 htmlcov/
