@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <style>
+            :root {
+                --box_shadow_op: 0.2;
+            }
+
+            body {
+                background: #E8EBF3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                font-family: Verdana, sans-serif;
+            }
+
+            .list-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .list {
+                background: #FFFFFF;
+                border-radius: 15px;
+                padding: 35px;
+                box-shadow: 0 0 10px  rgba(0,0,0, var(--box_shadow_op));
+                -moz-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
+                -webkit-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
+                -o-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
+                width: max-content;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+            
+
+            li a {
+                font-size: 1.2em;
+                color: rgb(104, 104, 104);
+                outline: none;
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="list-div">
+            <h2>Users that dont follow you back</h2>
+            <ul class="list">
+                {f1}
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                {f2}
+            </ul>
+        </div>
+    </body>
+</html>
