@@ -5,9 +5,9 @@ Utilizing Instagram's user data download feature, this utility serves to show yo
 
 Additionally, since this application is locally operated, the risk of your Instagram account being flagged as a bot account or being rate-limited is fully mitigated.
 
-![image](https://i.imgur.com/0gpU8Dv.png)
-
 <br/>
+
+![image](https://i.imgur.com/0gpU8Dv.png)
 
 ## Privacy
 This application, as seen in the [source code](./whosgone/utils/extractor.py), will not ananylze any user data except for the user's Instagram followers and following. Nothing more is done with the data after analysis. An internet connection is **not** used nor is it required for running this program.
