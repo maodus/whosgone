@@ -14,6 +14,13 @@ class IGUser:
 
     def __repr__(self):
         return self.name
+    
+    def __str__(self):
+        return self.name
+    
+    # In order to allow for sorted() to work
+    def __lt__(self, other):
+        return self.name < other.name
 
     def __eq__(self, other):
         if not isinstance(other, IGUser):
