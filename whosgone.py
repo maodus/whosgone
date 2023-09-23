@@ -7,7 +7,7 @@ LICENSE file in the root directory of this source tree.
 '''
 
 from whosgone.utils import IGExtractor
-from whosgone.core.output import TextOutput
+from whosgone.core.output import TextOutput, HTMLOutput
 import os
 
 if __name__ == "__main__":
@@ -21,5 +21,5 @@ if __name__ == "__main__":
     followers = igextract.get_followers()
     following = igextract.get_following()
 
-    output = TextOutput(followers, following)
+    output = HTMLOutput(followers, following)
     output.create_output()
