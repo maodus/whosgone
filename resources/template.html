@@ -1,3 +1,11 @@
+<!--
+Copyright (c) 2023, Nicholas Maodus
+All rights reserved.
+
+This source code is licensed under the BSD-style license found in the
+LICENSE file in the root directory of this source tree. 
+-->
+
 <html>
     <head>
         <style>
@@ -7,11 +15,14 @@
 
             body {
                 background: #E8EBF3;
+                font-family: Verdana, sans-serif;
+            }
+
+            .content {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: row;
-                font-family: Verdana, sans-serif;
             }
 
             .list-div {
@@ -19,23 +30,31 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                margin: 0px 50px;
             }
 
             .list {
                 background: #FFFFFF;
                 border-radius: 15px;
-                padding: 35px;
+                padding: 20px;
+                margin: 5px 0px;
                 box-shadow: 0 0 10px  rgba(0,0,0, var(--box_shadow_op));
                 -moz-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
                 -webkit-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
                 -o-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
-                width: max-content;
+                width: 280px;
             }
 
             ul {
                 list-style-type: none;
+                overflow-y: auto;
+                height: 350px;
+                
             }
             
+            li {
+                margin: 5px 0;
+            }
 
             li a {
                 font-size: 1.2em;
@@ -44,20 +63,33 @@
                 text-decoration: none;
             }
 
+            li a:visited {
+                color: #9b829e;
+            }
+
+            li a:hover {
+                text-decoration: underline;
+            }
+
         </style>
     </head>
     <body>
-        <div class="list-div">
-            <h2>Users that dont follow you back</h2>
-            <ul class="list">
-                {f1}
-            </ul>
-        </div>
+        <div class="content">
+            <div class="list-div">
+                <h2>Users that don't follow you back</h2>
+                <h3>{l1}</h3>
+                <ul class="list">
+                    {f1}
+                </ul>
+            </div>
 
-        <div>
-            <ul>
-                {f2}
-            </ul>
+            <div class="list-div">
+                <h2>Users that you don't follow back</h2>
+                <h3>{l2}</h3>
+                <ul class="list">
+                    {f2}
+                </ul>
+            </div>
         </div>
     </body>
 </html>
