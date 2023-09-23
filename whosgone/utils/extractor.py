@@ -19,11 +19,16 @@ class IGExtractor:
     # sub_path represents a file path to read from that is relative to the zip file
     def __read_zipped_file(self, sub_path):
         with ZipFile(self.path) as zip:
+
+            # Quick fix for newer instagram data files
+            if sub_path not in zip.namelist():
+                sub_path = sub_path.replace(".json", "_1.json")
+
             with zip.open(sub_path) as file:
                 return file.read()
     
     def get_followers(self):
-        data = self.__read_zipped_file("followers_and_following/followers_1.json")
+        data = self.__read_zipped_file("followers_and_following/followers.json")
         return jsontools.instantiate_users(data, "relationships_followers")
 
 
