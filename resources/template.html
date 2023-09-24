@@ -35,14 +35,35 @@ LICENSE file in the root directory of this source tree.
 
             .list {
                 background: #FFFFFF;
-                border-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
                 padding: 20px;
-                margin: 5px 0px;
+                margin: 0px 0px;
+                /*
                 box-shadow: 0 0 10px  rgba(0,0,0, var(--box_shadow_op));
                 -moz-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
                 -webkit-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
                 -o-box-shadow: 0 0 10px  rgba(0,0,0,var(--box_shadow_op));
+                */
                 width: 280px;
+            }
+
+            .list-head {
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction:column;
+                background: #292944;
+                color:white;
+                margin: 0px 0px;
+                width:300px;
+                padding:10px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+            
+            .list-head p {
+                margin:10 0 5 0;
             }
 
             ul {
@@ -76,16 +97,20 @@ LICENSE file in the root directory of this source tree.
     <body>
         <div class="content">
             <div class="list-div">
-                <h2>Users that don't follow you back</h2>
-                <h3>{l1}</h3>
+                <div class="list-head">
+                    <strong>Users that don't follow you back</strong>
+                    <p>{l1}</p>
+                </div>
                 <ul class="list">
                     {f1}
                 </ul>
             </div>
 
             <div class="list-div">
-                <h2>Users that you don't follow back</h2>
-                <h3>{l2}</h3>
+                <div class="list-head">
+                    <strong>Users that you don't follow back</strong>
+                    <p>{l2}</p>
+                </div>
                 <ul class="list">
                     {f2}
                 </ul>
