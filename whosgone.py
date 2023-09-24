@@ -8,11 +8,13 @@ LICENSE file in the root directory of this source tree.
 
 from whosgone.utils import IGExtractor
 from whosgone.core.output import TextOutput, HTMLOutput
+from whosgone.core import settings
 import os
 
 if __name__ == "__main__":
-    zip_path = input("Please enter the file path for your instagram data file: ")
+    settings.initialize()
 
+    zip_path = input("Please enter the file path for your instagram data file: ")
     while not os.path.exists(zip_path) or not zip_path.endswith(".zip"):
         zip_path = input("Input was invalid, please try again: ")
 
@@ -21,5 +23,11 @@ if __name__ == "__main__":
     followers = igextract.get_followers()
     following = igextract.get_following()
 
-    output = HTMLOutput(followers, following)
+    output = None
+        
+    if settings.use_html():
+        output = HTMLOutput(followers, following)
+    else:
+        output = TextOutput(followers, following)
+
     output.create_output()
