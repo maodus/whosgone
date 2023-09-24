@@ -7,7 +7,7 @@ Additionally, since this application is locally operated, the risk of your Insta
 
 <br/>
 
-![image](https://i.imgur.com/0gpU8Dv.png)
+![dont follow you back or you dont follow back](https://i.imgur.com/0gpU8Dv.png)
 
 ## Privacy
 This application, as seen in the [source code](./whosgone/utils/extractor.py), will not ananylze any user data except for the user's Instagram followers and following. Nothing more is done with the data after analysis. An internet connection is **not** used nor is it required for running this program.
@@ -28,7 +28,7 @@ Before using this app, you will want to obtain your **JSON** Instagram data in t
 1. Download your Instagram usage data. **Do not unzip the file**.
 2. Run `whosgone.py`
    * For Windows CMD: ```python whosgone.py``` or ```whosgone.py```
-   * For UNIX (Mac/Linux): ```python3 whosgone.py```or ```python whosgone.py```
+   * For UNIX (Mac/Linux): ```python3 whosgone.py``` or ```python whosgone.py```
 3. When prompted, type in a valid file path that points to your zipped data file. The zip file does not have to be inside the same directory.
 4. Check out your results in `/ig_results/`.
 
